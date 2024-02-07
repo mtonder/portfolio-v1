@@ -10,13 +10,7 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: [
-      "Hi, I'm Marek Tonder",
-      "Perfectionist",
-      "Minimalism fan",
-      "Team player",
-      "Keen eye for detail",
-    ],
+    words: ["Hi, I'm Marek Tonder", "I'm a Frontend Developer"],
     loop: true,
     delaySpeed: 2000,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
@@ -26,17 +20,17 @@ function Hero({}: Props) {
     <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
-        className="relative mx-auto h-32 w-32 rounded-full border border-[#324DD2]/40 object-cover"
+        className="relative mx-auto h-48 w-48 rounded-full border border-[#333] object-cover"
         src="/photo.jpg"
         width={256}
         height={256}
         alt="Picture of the author"
       />
       <div className="z-20">
-        <h2 className="text-md pb-4 uppercase tracking-[16px] text-gray-400">Frontend Developer</h2>
-        <h1 className="px-10 text-4xl font-semibold text-white lg:text-5xl">
-          <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#324DD2" cursorStyle />
+        <h2 className="text-md pb-4 uppercase tracking-[8px] text-gray-300">Frontend Developer</h2>
+        <h1 className="inline-flex min-h-20 items-center px-8 text-3xl font-semibold text-white md:min-h-max lg:text-5xl">
+          <span className="">{text}</span>
+          <Cursor cursorColor="#fff" />
         </h1>
 
         <div className="pt-4">

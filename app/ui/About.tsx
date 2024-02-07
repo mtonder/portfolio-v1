@@ -13,7 +13,7 @@ export default function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="relative mx-auto flex h-screen  max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
     >
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[16px] text-gray-400">About</h3>
+      <h3 className="absolute top-24 text-2xl uppercase tracking-[16px] text-gray-300">About</h3>
 
       <motion.img
         initial={{
@@ -33,7 +33,7 @@ export default function About({}: Props) {
         <h4 className="text-4xl font-semibold">
           Here is a <span className="underline decoration-[#324DD2]">little</span> background
         </h4>
-        <p className="text-base">
+        <p className="text-justify text-base">
           I have always been close to IT, so I had no doubts about my career path. I graduated from
           the University of Zielona Góra in 2014 and since then I have been actively working as a
           developer. At the beginning of my career I worked as a fullstack, but in 2016 I decided to

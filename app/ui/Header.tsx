@@ -13,7 +13,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-start justify-between p-4 xl:items-center">
+    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl justify-between p-4 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -32,24 +32,28 @@ export default function Header({}: Props) {
       >
         <SocialIcon
           url="https://linkedin.com"
+          target="_blank"
           network="linkedin"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://telegram.com"
+          target="_blank"
           network="telegram"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://github.com"
+          target="_blank"
           network="github"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
           url="https://instagram.com"
+          target="_blank"
           network="instagram"
           fgColor="gray"
           bgColor="transparent"
@@ -69,15 +73,15 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex cursor-pointer flex-row items-center"
+        className="flex cursor-pointer flex-row items-center text-gray-500 hover:text-[#324DD2]"
       >
-        <SocialIcon
+        {/* <SocialIcon
           className="cursor-pointer"
           network="email"
           fgColor="gray"
           bgColor="transparent"
-        />
-        <p className="hidden text-sm uppercase text-gray-500 md:inline-flex">Get in touch</p>
+        /> */}
+        <p className=" inline-flex text-sm font-semibold uppercase">Get in touch</p>
       </motion.div>
     </header>
   );

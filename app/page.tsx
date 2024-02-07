@@ -1,4 +1,5 @@
 import About from "./ui/About";
+import Experience from "./ui/Experience";
 import Header from "./ui/Header";
 import Hero from "./ui/Hero";
 
@@ -13,7 +14,9 @@ export default function Home() {
       <section id="about" className="snap-center">
         <About />
       </section>
-      {/* Experience */}
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
       {/* Skills */}
       {/* Contact Me */}
     </main>

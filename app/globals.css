@@ -24,7 +24,13 @@
 
 @layer components {
   .heroButton {
-    @apply rounded-full border border-[#242424] px-6 py-2 text-sm uppercase tracking-[4px] 
-    text-gray-400 transition-all hover:border-[#324DD2]/40 hover:bg-[#324DD2]/10;
+    @apply rounded-full border border-[#242424] px-6 py-4 text-sm uppercase tracking-[4px] text-gray-300 
+    transition-all hover:border-[#324DD2]/40 hover:bg-[#324DD2]/10 md:py-2;
+  }
+}
+
+.social-icon:hover {
+  .social-svg-icon {
+    fill: #324dd2 !important;
   }
 }
