@@ -26,17 +26,15 @@ function Hero({}: Props) {
     <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
-        className="relative mx-auto h-32 w-32 rounded-full object-cover"
+        className="relative mx-auto h-32 w-32 rounded-full border border-[#324DD2]/40 object-cover"
         src="/photo.jpg"
         width={256}
         height={256}
         alt="Picture of the author"
       />
       <div className="z-20">
-        <h2 className="text-md pb-4 uppercase tracking-[16px] text-gray-400">
-          Senior Frontend Developer
-        </h2>
-        <h1 className="px-10 text-4xl font-semibold lg:text-5xl">
+        <h2 className="text-md pb-4 uppercase tracking-[16px] text-gray-400">Frontend Developer</h2>
+        <h1 className="px-10 text-4xl font-semibold text-white lg:text-5xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#324DD2" cursorStyle />
         </h1>
