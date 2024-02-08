@@ -27,7 +27,7 @@ function Hero({}: Props) {
         alt="Picture of the author"
       />
       <div className="z-20">
-        <h2 className="text-md mr-[-8px] pb-4 font-semibold uppercase tracking-[8px] text-gray-300">
+        <h2 className="text-md mr-[-8px] pb-4 font-semibold uppercase tracking-[8px] text-white">
           Frontend Developer
         </h2>
         <h1 className="inline-flex min-h-20 items-center px-8 text-3xl font-semibold text-white md:min-h-max lg:text-5xl">

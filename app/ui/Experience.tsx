@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
@@ -11,11 +12,19 @@ export default function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex h-screen  max-w-7xl  flex-col items-center justify-evenly overflow-hidden px-10 text-center md:flex-row md:text-left"
+      className="relative mx-auto flex h-screen  max-w-7xl  flex-col items-center justify-evenly overflow-hidden px-4 text-center md:flex-row md:px-10 md:text-left"
     >
-      <h3 className="mr-[-16px]text-gray-300 absolute top-24 text-2xl font-semibold uppercase  tracking-[16px]">
+      <h3 className="invisible absolute top-24 mr-[-16px] text-2xl font-semibold uppercase tracking-[16px] text-white  md:visible">
         Experience
       </h3>
+
+      <div className="mt-12 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+      </div>
     </motion.div>
   );
 }
