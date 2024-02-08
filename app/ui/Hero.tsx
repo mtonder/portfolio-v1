@@ -10,8 +10,8 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hi, I'm Marek Tonder", "I'm a Frontend Developer"],
-    loop: true,
+    words: ["Hi, I'm Marek Tonder"],
+    loop: 1,
     delaySpeed: 2000,
     onLoopDone: () => console.log(`loop completed after 3 runs.`),
   });
@@ -27,10 +27,14 @@ function Hero({}: Props) {
         alt="Picture of the author"
       />
       <div className="z-20">
-        <h2 className="text-md pb-4 uppercase tracking-[8px] text-gray-300">Frontend Developer</h2>
+        <h2 className="text-md mr-[-8px] pb-4 font-semibold uppercase tracking-[8px] text-gray-300">
+          Frontend Developer
+        </h2>
         <h1 className="inline-flex min-h-20 items-center px-8 text-3xl font-semibold text-white md:min-h-max lg:text-5xl">
-          <span className="">{text}</span>
-          <Cursor cursorColor="#fff" />
+          <span className="mr-3">{text}</span>
+          <div className="mb-2">
+            <Cursor cursorColor="#fff" />
+          </div>
         </h1>
 
         <div className="pt-4">
