@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import BackgroundCircles from "./BackgroundCircles";
+import BackgroundCircles from "../components/BackgroundCircles";
 
 type Props = {};
 
