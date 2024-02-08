@@ -21,11 +21,10 @@ export default function Skills({}: Props) {
         <div className="w-full">
           <p className="text-sm">Mar 2013 - Jun 2014</p>
           <p className="font-bold">University of Zielona Góra</p>
-          <h4 className="text-md font-semibold text-white md:text-2xl">
-            Master of Science in Computer Science with specialization in{" "}
-            <span className="underline decoration-[#324DD2]">IT Systems Engineering</span>
+          <h4 className="text-sm font-semibold text-white md:text-2xl">
+            Master of Science in Computer Science with specialization in IT Systems Engineering
           </h4>
-          <span className="mt-1 flex flex-col text-sm">
+          <span className="mt-1 flex flex-col text-sm md:text-base">
             Master's Thesis:{" "}
             <Link
               className="font-semibold text-blue-600"
@@ -36,20 +35,17 @@ export default function Skills({}: Props) {
             >
               Optimization of stock investments with swarm intelligence
             </Link>
-            <span> GPA: 5.0/5.0.</span>
+            <span> GPA: 5.0/5.0</span>
           </span>
         </div>
         <div className="w-full">
           <p className="text-sm">Oct 2009 - Feb 2013</p>
           <p className="font-bold">University of Zielona Góra</p>
           <h4 className="text-md font-semibold  text-white md:text-2xl">
-            Bachelor of Science in Computer Science with specialization in
-            <span className="underline decoration-[#324DD2]">
-              {" "}
-              Microinformatic Systems Engineering
-            </span>
+            Bachelor of Science in Computer Science with specialization in Microinformatic Systems
+            Engineering
           </h4>
-          <span className="flex flex-col text-sm">
+          <span className="flex flex-col  text-sm md:text-base">
             <span className="mt-1 flex flex-col">
               BSc Thesis:{" "}
               <Link
@@ -62,7 +58,7 @@ export default function Skills({}: Props) {
                 Implementation of a graphical editor for hierarchical, interpreted Petri nets
               </Link>
             </span>
-            <span className="mt-1 flex flex-col">
+            <span className="mt-1 flex flex-col text-sm md:text-base">
               Article from KNWS science conference:{" "}
               <Link
                 className="font-semibold text-blue-600"
@@ -75,7 +71,7 @@ export default function Skills({}: Props) {
                 Petri net model
               </Link>
             </span>
-            <span> GPA: 5.0/5.0.</span>
+            <span> GPA: 5.0/5.0</span>
           </span>
         </div>
       </div>
