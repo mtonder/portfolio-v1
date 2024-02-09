@@ -17,23 +17,27 @@ export default function Skills({}: Props) {
       <h3 className="invisible absolute top-24 mr-[-16px] text-2xl font-semibold uppercase tracking-[16px] text-white md:visible">
         Skills
       </h3>
+
       <div className="mt-24 w-full space-y-4 overflow-y-auto px-0 text-left md:px-10">
         <div className="w-full">
-          <p className="mb-2 text-justify text-sm md:text-base">
+          <h4 className="text-xl font-semibold text-white md:text-3xl">
+            <span className="underline decoration-[#324DD2]">Skills</span> that pay the bills
+          </h4>
+          <p className="mb-8 text-justify text-sm md:text-base">
             Here are some of the technologies and tools I've been working with recently.
           </p>
-          <h4 className="text-xl font-semibold uppercase text-white md:text-2xl">Programming</h4>
+          <h4 className="text-xl font-semibold uppercase text-white md:text-xl">Programming</h4>
           <div className="mb-4 inline-flex flex-auto flex-wrap overflow-hidden text-nowrap text-sm">
             <Badge label="JavaScript (ES6+)" />
             <Badge label="TypeScript" />
           </div>
-          <h4 className="text-xl font-semibold uppercase text-white md:text-2xl">Frameworks</h4>
+          <h4 className="text-xl font-semibold uppercase text-white md:text-xl">Frameworks</h4>
           <div className="mb-4 inline-flex flex-auto flex-wrap overflow-hidden text-nowrap text-sm">
             <Badge label="React" />
             <Badge label="Next.js" />
             <Badge label="Angular" />
           </div>
-          <h4 className="text-xl font-semibold uppercase text-white md:text-2xl">
+          <h4 className="text-xl font-semibold uppercase text-white md:text-xl">
             Libraries and tools
           </h4>
           <div className="mb-4 inline-flex flex-auto flex-wrap overflow-hidden text-nowrap text-sm">
@@ -43,14 +47,16 @@ export default function Skills({}: Props) {
             <Badge label="PrimeNG" />
             <Badge label="Storybook" />
             <Badge label="Zeroheight" />
-            <Badge label="npm/pnpm/vite" />
+            <Badge label="npm/pnpm" />
+            <Badge label="Vite" />
             <Badge label="ESlint" />
             <Badge label="Husky" />
             <Badge label="Axios" />
             <Badge label="i18next" />
             <Badge label="Copilot" />
+            <Badge label="Visual Code" />
           </div>
-          <h4 className="text-xl font-semibold uppercase text-white md:text-2xl">
+          <h4 className="text-xl font-semibold uppercase text-white md:text-xl">
             Work management & Workflow
           </h4>
           <div className="mb-4 inline-flex flex-auto flex-wrap overflow-hidden text-nowrap text-sm">
@@ -61,8 +67,9 @@ export default function Skills({}: Props) {
             <Badge label="Kanban" />
             <Badge label="Cross-functional teams" />
             <Badge label="Gitflow" />
+            <Badge label="Design System" />
           </div>
-          <h4 className="text-xl font-semibold uppercase text-white md:text-2xl">Design</h4>
+          <h4 className="text-xl font-semibold uppercase text-white md:text-xl">Design</h4>
           <div className="mb-4 inline-flex flex-auto flex-wrap overflow-hidden text-nowrap text-sm">
             <Badge label="Figma" />
             <Badge label="Zeplin" />

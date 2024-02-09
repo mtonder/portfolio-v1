@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { BeakerIcon } from "@heroicons/react/24/solid";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -19,6 +21,12 @@ export default function Skills({}: Props) {
       </h3>
       <div className="w-full space-y-4 px-0 text-left md:px-10">
         <div className="w-full">
+          <h4 className="text-xl font-semibold text-white md:text-3xl">
+            Where I <span className="underline decoration-[#324DD2]">learned</span>
+          </h4>
+          <p className="mb-8 text-justify text-sm md:text-base">
+            Academic background and achievements.{" "}
+          </p>
           <p className="text-sm">Mar 2013 - Jun 2014</p>
           <p className="font-bold">University of Zielona Góra</p>
           <h4 className="text-sm font-semibold text-white md:text-2xl">
@@ -33,7 +41,8 @@ export default function Skills({}: Props) {
               rel="noopener noreferrer"
               download
             >
-              Optimization of stock investments with swarm intelligence
+              Optimization of stock investments with swarm intelligence{" "}
+              <ArrowUpRightIcon className="inline-flex h-4 w-4" />
             </Link>
             <span> GPA: 5.0/5.0</span>
           </span>
@@ -55,7 +64,8 @@ export default function Skills({}: Props) {
                 rel="noopener noreferrer"
                 download
               >
-                Implementation of a graphical editor for hierarchical, interpreted Petri nets
+                Implementation of a graphical editor for hierarchical, interpreted Petri nets{" "}
+                <ArrowUpRightIcon className="inline-flex h-4 w-4" />
               </Link>
             </span>
             <span className="mt-1 flex flex-col text-sm md:text-base">
@@ -68,7 +78,7 @@ export default function Skills({}: Props) {
                 download
               >
                 System for logic controller design based on hierarchical, interpreted and colored
-                Petri net model
+                Petri net model <ArrowUpRightIcon className="inline-flex h-4 w-4" />
               </Link>
             </span>
             <span> GPA: 5.0/5.0</span>

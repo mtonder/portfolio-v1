@@ -9,6 +9,8 @@ import Contact from "./ui/sections/Contact";
 export default function Home() {
   return (
     <main className="z-0 h-screen snap-y snap-mandatory overflow-scroll bg-[rgb(36,36,36)] text-[#dcdbd1]">
+      {/* <div className="absolute left-0 top-[30%] h-[500px] w-full -skew-y-12 bg-[#324DD2]/10" /> */}
+
       <Header />
       <section id="hero" className="snap-start">
         <Hero />
@@ -16,18 +18,18 @@ export default function Home() {
       <section id="about" className="snap-center">
         <About />
       </section>
-      <section id="experience" className="snap-start">
+      <section id="experience" className="snap-center">
         <Experience />
       </section>
-      <section id="education" className="snap-center">
+      <section id="education" className="snap-start">
         <Education />
       </section>
-      <section id="education" className="snap-center">
+      <section id="education" className="snap-start">
         <Skills />
       </section>
-      {/* <section id="education" className="snap-start">
+      <section id="education" className="snap-start">
         <Contact />
-      </section> */}
+      </section>
     </main>
   );
 }
