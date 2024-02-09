@@ -55,6 +55,8 @@ export default function Skills({}: Props) {
             <Badge label="i18next" />
             <Badge label="Copilot" />
             <Badge label="Visual Code" />
+            <Badge label="Vercel" />
+            <Badge label="Netlify" />
           </div>
           <h4 className="text-xl font-semibold uppercase text-white md:text-xl">
             Work management & Workflow

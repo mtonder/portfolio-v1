@@ -8,6 +8,8 @@ import "react-social-icons/github";
 import "react-social-icons/instagram";
 import "react-social-icons/email";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 type Props = {};
 
@@ -59,30 +61,29 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="flex cursor-pointer flex-row items-center text-gray-500 hover:text-[#324DD2]"
-      >
-        {/* <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        /> */}
-        <p className=" inline-flex text-sm font-semibold uppercase">Get in touch</p>
-      </motion.div>
+      <Link href="#contact" className="flex flex-row items-center">
+        <motion.div
+          initial={{
+            x: 500,
+            opacity: 0,
+            scale: 0.5,
+          }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 1.5,
+          }}
+          className="text-[gray] hover:text-[#324DD2]"
+        >
+          <p className="flex items-center text-sm font-semibold uppercase">
+            <EnvelopeIcon className="h-8 w-8" />
+            <span className="invisible w-0 md:visible md:ml-2 md:w-auto">Get in touch</span>
+          </p>
+        </motion.div>
+      </Link>
     </header>
   );
 }
