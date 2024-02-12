@@ -97,7 +97,7 @@ export default function Experience({}: Props) {
           techStack: ["Angular", "RxJS", "PrimeNG", "Jasmine"],
         },
         {
-          title: "BitBayBot • Fintech/Blockchain",
+          title: "BB Bot • Fintech/Blockchain",
           description: "A tool for automatic trading on cryptocurrency exchanges.",
           responsibilities: [
             "Next version of AutoInvestor with new features crafted for better experience.",
@@ -168,13 +168,13 @@ export default function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex max-w-[2000px] flex-col  items-center justify-evenly overflow-hidden px-4 text-center md:h-screen md:flex-row md:px-10 md:text-left"
+      className="relative mx-auto flex  flex-col items-center justify-evenly  px-4 text-center md:flex-row md:px-10 md:text-left"
     >
       <h3 className="invisible absolute top-24 mr-[-16px] text-2xl font-semibold uppercase tracking-[16px] text-white  md:visible">
         Experience
       </h3>
 
-      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80 mt-12 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10">
+      <div className="mt-16 flex w-full flex-col items-center space-y-4 p-4 md:mt-32 md:p-10">
         {jobs.map((job, index) => (
           <ExperienceCard
             key={index}

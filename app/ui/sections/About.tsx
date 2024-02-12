@@ -12,7 +12,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex h-screen  max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
+      className="relative mx-auto flex h-screen  max-w-7xl flex-col items-center justify-evenly px-8 text-center md:flex-row md:px-10 md:text-left"
     >
       {/*
       // TODO - add background circles
