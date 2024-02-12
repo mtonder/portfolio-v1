@@ -27,17 +27,17 @@ function Hero({}: Props) {
         alt="Picture of the author"
       />
       <div className="z-20">
-        <h2 className="text-md mr-[-8px] pb-4 font-semibold uppercase tracking-[8px] text-white">
+        <h2 className="md:text-md text-gray[300] mr-[-8px] pb-4 text-sm font-semibold uppercase tracking-[8px]">
           Frontend Developer
         </h2>
-        <h1 className="inline-flex min-h-20 items-center px-8 text-3xl font-semibold text-white md:min-h-max lg:text-5xl">
-          <span className="mr-3">{text}</span>
+        <h1 className="inline-flex min-h-10 items-center px-2 text-2xl font-semibold text-white md:min-h-max md:px-8 lg:text-5xl">
+          <span className="mr-1">{text}</span>
           <div className="mb-2">
             <Cursor cursorColor="#fff" />
           </div>
         </h1>
 
-        <div className="pt-4">
+        <div className="flex flex-col space-y-1 md:block md:pt-4">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

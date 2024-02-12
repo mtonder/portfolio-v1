@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Home() {
   const YEAR = new Date().getFullYear();
   return (
-    <main className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80  z-0 h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll bg-[rgb(36,36,36)] text-[#dcdbd1]">
+    <main className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80  z-0 h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll bg-[rgb(15,23,42)] text-[#dcdbd1]">
       {/* <div className="absolute left-0 top-[30%] h-[500px] w-full -skew-y-12 bg-[#324DD2]/10" /> */}
 
       <Header />
@@ -33,7 +33,7 @@ export default function Home() {
         <Contact />
       </section>
       <Link href="#hero">
-        <footer className="sticky bottom-1 w-full cursor-pointer text-center text-gray-500/80">
+        <footer className="sticky bottom-1 z-20 w-full cursor-pointer text-center text-gray-500/80">
           {YEAR} @ Marek Tonder
         </footer>
       </Link>

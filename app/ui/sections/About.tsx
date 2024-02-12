@@ -36,10 +36,10 @@ export default function About({}: Props) {
         className="mt-32 h-56 w-56 flex-shrink-0 rounded-full  object-cover md:mb-0 md:mt-0 md:h-96 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
       ></motion.img> */}
       <div className="space-y-4 px-0 md:px-10">
-        <h4 className="text-xl font-semibold text-white md:text-3xl">
+        <h4 className="md-0 mt-8 text-xl font-semibold text-white md:text-3xl">
           Here is a <span className="underline decoration-[#324DD2]">little</span> background
         </h4>
-        <p className="text-justify text-sm md:text-base">
+        <p className="text-md text-justify md:text-base">
           I have always been close to IT, so I had no doubts about my career path. I graduated from
           the University of Zielona Góra in 2014 and since then I have been actively working as a
           developer. At the beginning of my career I worked as a fullstack, but in 2016 I decided to
