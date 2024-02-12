@@ -97,7 +97,7 @@ export default function Experience({}: Props) {
           techStack: ["Angular", "RxJS", "PrimeNG", "Jasmine"],
         },
         {
-          title: "BitBayBot • Fintech/Blockchain",
+          title: "BB Bot • Fintech/Blockchain",
           description: "A tool for automatic trading on cryptocurrency exchanges.",
           responsibilities: [
             "Next version of AutoInvestor with new features crafted for better experience.",
@@ -168,13 +168,16 @@ export default function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex h-screen max-w-[2000px]  flex-col items-center justify-evenly overflow-hidden px-4 text-center md:flex-row md:px-10 md:text-left"
+      className="relative mx-auto mt-24  flex flex-col items-start justify-evenly px-8 text-left md:flex-row md:px-10"
     >
-      <h3 className="invisible absolute top-24 mr-[-16px] text-2xl font-semibold uppercase tracking-[16px] text-white  md:visible">
+      <h3 className=" mr-[-8px] text-2xl font-semibold uppercase tracking-[8px] text-white md:absolute md:top-24  ">
         Experience
       </h3>
+      <p className="mb-8 text-left text-sm md:hidden md:text-center md:text-base">
+        Commercial work experience since 2014
+      </p>
 
-      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80 mt-12 flex w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10">
+      <div className="flex w-full flex-col items-center space-y-4  py-8 md:mt-32 md:p-10">
         {jobs.map((job, index) => (
           <ExperienceCard
             key={index}

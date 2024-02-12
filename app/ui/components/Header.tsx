@@ -15,7 +15,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl justify-between p-4 xl:items-center">
+    <header className="md:p4 sticky top-0 z-30 mx-auto flex max-w-7xl justify-between bg-[rgb(15,23,42)] px-8 py-2 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -33,31 +33,31 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://linkedin.com"
+          url="https://www.linkedin.com/in/marektonder/"
           target="_blank"
           network="linkedin"
-          fgColor="gray"
+          fgColor="#dcdbd1"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://telegram.com"
+          url="https://t.me/marektonder"
           target="_blank"
           network="telegram"
-          fgColor="gray"
+          fgColor="#dcdbd1"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://github.com"
+          url="https://github.com/mtonder"
           target="_blank"
           network="github"
-          fgColor="gray"
+          fgColor="#dcdbd1"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://instagram.com"
+          url="https://instagram.com/marektonder"
           target="_blank"
           network="instagram"
-          fgColor="gray"
+          fgColor="#dcdbd1"
           bgColor="transparent"
         />
       </motion.div>
@@ -76,7 +76,7 @@ export default function Header({}: Props) {
           transition={{
             duration: 1.5,
           }}
-          className="text-[gray] hover:text-[#324DD2]"
+          className="text-[#dcdbd1] hover:text-[#324DD2]"
         >
           <p className="flex items-center text-sm font-semibold uppercase">
             <EnvelopeIcon className="h-8 w-8" />

@@ -17,7 +17,7 @@ type Job = {
 
 export default function ExperienceCard({ period, company, jobTitle, projects }: Job) {
   return (
-    <article className="flex w-full min-w-[300px] flex-shrink-0 snap-center flex-col items-center space-y-8 overflow-hidden overflow-y-auto rounded-lg bg-[#292929] p-4 md:w-[600px] md:p-10 xl:w-[900px]">
+    <article className="flex w-full min-w-[300px] max-w-7xl flex-shrink-0 flex-col items-center space-y-8  rounded-lg bg-white/5 p-4 md:p-10">
       <div className="w-full px-0 text-left md:px-10">
         <p className="text-sm">{period}</p>
         <p className="font-bold">{company}</p>

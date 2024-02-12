@@ -20,24 +20,25 @@ function Hero({}: Props) {
     <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
-        className="relative mx-auto h-48 w-48 rounded-full border border-[#333] object-cover"
+        className="relative mx-auto h-48 w-48 rounded-full border border-[#324DD2]/50 object-cover"
         src="/photo.jpg"
         width={256}
         height={256}
         alt="Picture of the author"
+        priority={true}
       />
       <div className="z-20">
-        <h2 className="text-md mr-[-8px] pb-4 font-semibold uppercase tracking-[8px] text-white">
+        <h2 className="md:text-md text-gray[300] mr-[-8px] pb-4 text-sm font-semibold uppercase tracking-[8px]">
           Frontend Developer
         </h2>
-        <h1 className="inline-flex min-h-20 items-center px-8 text-3xl font-semibold text-white md:min-h-max lg:text-5xl">
-          <span className="mr-3">{text}</span>
-          <div className="mb-2">
+        <h1 className="inline-flex min-h-10 items-center px-2 text-2xl font-semibold text-white md:min-h-max md:px-8 lg:text-5xl">
+          <span className="mr-1">{text}</span>
+          <div className="mb-1">
             <Cursor cursorColor="#fff" />
           </div>
         </h1>
 
-        <div className="pt-4">
+        <div className=" flex flex-col space-y-1 pt-2 md:visible md:block">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
