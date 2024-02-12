@@ -25,6 +25,7 @@ function Hero({}: Props) {
         width={256}
         height={256}
         alt="Picture of the author"
+        priority={true}
       />
       <div className="z-20">
         <h2 className="md:text-md text-gray[300] mr-[-8px] pb-4 text-sm font-semibold uppercase tracking-[8px]">
