@@ -14,18 +14,18 @@ export default function Skills({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex h-screen  max-w-7xl flex-col items-center justify-evenly px-8 text-center md:flex-row md:px-10 md:text-left"
+      className="relative mx-auto flex max-w-7xl  flex-col items-start justify-evenly overflow-hidden px-8 py-8  text-center md:h-screen md:flex-row md:items-center md:px-10 md:text-left"
     >
-      <h3 className="invisible absolute top-24 mr-[-16px] text-2xl font-semibold uppercase tracking-[16px] text-white md:visible">
+      <h3 className="mr-[-8px] text-2xl font-semibold uppercase tracking-[8px] text-white md:visible md:absolute md:top-24">
         Education
       </h3>
-      <div className="mt-16 w-full space-y-4 px-0 text-left md:mt-32 md:px-10">
+      <div className="w-full space-y-4 px-0 text-left md:mt-32 md:px-10">
         <div className="w-full">
-          <h4 className="text-xl font-semibold text-white md:text-3xl">
+          <h4 className=" h-0 text-xl font-semibold text-white  opacity-0 md:h-auto md:text-3xl md:opacity-100">
             Where I've <span className="underline decoration-[#324DD2]">learned</span>
           </h4>
-          <p className="mb-4 text-justify text-sm md:mb-8 md:text-base">
-            Academic background and achievements.{" "}
+          <p className="mb-8 text-justify text-sm md:mb-8 md:text-base">
+            Academic background and achievements{" "}
           </p>
           <p className="text-sm">Mar 2013 - Jun 2014</p>
           <p className="font-bold">University of Zielona Góra</p>
