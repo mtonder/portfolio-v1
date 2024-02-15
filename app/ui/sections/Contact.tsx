@@ -90,7 +90,7 @@ export default function Contact({}: Props) {
         </div>
         <Link href="#hero" className="absolute bottom-0 left-0 right-0 mx-auto">
           <footer className="cursor-pointer text-center text-gray-500/80">
-            {YEAR} @ Marek Tonder
+            Marek Tonder @ {YEAR}
           </footer>
         </Link>
       </motion.div>

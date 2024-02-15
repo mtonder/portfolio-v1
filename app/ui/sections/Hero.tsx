@@ -17,7 +17,7 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
+    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden text-center md:h-screen">
       <BackgroundCircles />
       <Image
         className="relative mx-auto h-48 w-48 rounded-full border border-[#324DD2]/50 object-cover"
@@ -38,7 +38,7 @@ function Hero({}: Props) {
           </div>
         </h1>
 
-        <div className=" flex flex-col space-y-1 pt-2 md:visible md:block">
+        <div className=" hidden flex-col space-y-1 pt-2 md:visible md:block ">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

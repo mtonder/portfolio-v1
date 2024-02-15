@@ -168,12 +168,12 @@ export default function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto mt-24  flex flex-col items-start justify-evenly px-8 text-left md:flex-row md:px-10"
+      className="relative mx-auto mt-12  flex flex-col items-start justify-evenly px-8 text-left md:flex-row md:px-10"
     >
       <h3 className=" mr-[-8px] text-2xl font-semibold uppercase tracking-[8px] text-white md:absolute md:top-24  ">
         Experience
       </h3>
-      <p className="mb-8 text-left text-sm md:hidden md:text-center md:text-base">
+      <p className="text-left text-sm md:hidden md:text-center md:text-base">
         Commercial work experience since 2014
       </p>
 

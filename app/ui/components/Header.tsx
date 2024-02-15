@@ -15,7 +15,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="md:p4 sticky top-0 z-30 mx-auto flex max-w-7xl justify-between bg-[rgb(15,23,42)] px-8 py-2 xl:items-center">
+    <header className="sticky top-0 z-30 mx-auto flex max-w-7xl justify-between bg-[rgb(15,23,42)] px-4 py-2 md:px-0  xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -78,9 +78,9 @@ export default function Header({}: Props) {
           }}
           className="text-[#dcdbd1] hover:text-[#324DD2]"
         >
-          <p className="flex items-center text-sm font-semibold uppercase">
+          <p className="flex items-center space-x-3  text-sm font-semibold uppercase">
             <EnvelopeIcon className="h-8 w-8" />
-            <span className="invisible w-0 md:visible md:ml-2 md:w-auto">Get in touch</span>
+            <span className="invisible w-0 md:visible md:w-auto md:pr-2">Get in touch</span>
           </p>
         </motion.div>
       </Link>

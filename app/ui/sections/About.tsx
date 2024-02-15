@@ -12,7 +12,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto flex max-w-7xl  flex-col items-start justify-evenly overflow-hidden px-8 py-8  text-center md:h-screen md:flex-row md:items-center md:px-10 md:text-left"
+      className="relative mx-auto flex max-w-full  flex-col items-start justify-evenly overflow-hidden px-8 py-8  text-center md:h-screen md:flex-row md:items-center md:px-10 md:text-left"
     >
       {/*
       // TODO - add background circles
@@ -21,6 +21,8 @@ export default function About({}: Props) {
       <h3 className="mr-[-8px] text-2xl font-semibold uppercase tracking-[8px] text-white md:visible md:absolute md:top-24">
         About
       </h3>
+      <div className="invisible absolute left-0 top-[30%] h-[500px] w-full -skew-y-12 bg-[#324DD2]/10 md:visible" />
+
       {/* <motion.img
         initial={{
           x: -200,
@@ -35,7 +37,7 @@ export default function About({}: Props) {
         src="/photo.jpg"
         className="mt-32 h-56 w-56 flex-shrink-0 rounded-full  object-cover md:mb-0 md:mt-0 md:h-96 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
       ></motion.img> */}
-      <div className=" space-y-8 px-0 text-left md:mt-0 md:px-10">
+      <div className=" max-w-7xl space-y-8 px-0 text-left md:mt-0 md:px-10">
         <h4 className="text-sm font-normal md:mt-0 md:text-3xl md:font-semibold">
           Here is a little background
         </h4>
