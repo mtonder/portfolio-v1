@@ -17,11 +17,11 @@ type Job = {
 
 export default function ExperienceCard({ period, company, jobTitle, projects }: Job) {
   return (
-    <article className="flex w-full min-w-[300px] max-w-7xl flex-shrink-0 flex-col items-center space-y-8  rounded-lg bg-white/5 p-4 md:p-10">
+    <article className="flex w-full min-w-[300px] max-w-7xl flex-shrink-0 flex-col items-center space-y-8  rounded-lg p-0 hover:border-[#fff]/10 md:p-10 md:hover:bg-white/5">
       <div className="w-full px-0 text-left md:px-10">
         <p className="text-sm">{period}</p>
         <p className="font-bold">{company}</p>
-        <h4 className="text-xl font-semibold uppercase text-[#324DD2] md:text-2xl">{jobTitle}</h4>
+        <h4 className="text-xl font-semibold uppercase text-[#fff] md:text-2xl">{jobTitle}</h4>
         {projects.map((project, index) => (
           <div key={index}>
             <p className="font-semibold">{project.title}</p>
