@@ -15,7 +15,7 @@ type Inputs = {
 type Props = {};
 
 export default function Contact({}: Props) {
-  const [state, handleSubmit] = useForm("dupa");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM as string);
 
   if (state.succeeded) {
     toast.success("Form sent succesfully!", {
