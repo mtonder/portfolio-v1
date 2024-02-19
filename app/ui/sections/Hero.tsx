@@ -17,10 +17,10 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden text-center md:h-screen">
+    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden bg-gradient-radial from-[#151d3a] to-[#111729] text-center md:h-screen">
       <BackgroundCircles />
       <Image
-        className="relative mx-auto h-48 w-48 rounded-full border border-[#324DD2]/50 object-cover"
+        className="relative mx-auto h-48 w-48 rounded-full border border-[#000]/0 object-cover shadow-lg"
         src="/photo.jpg"
         width={256}
         height={256}
