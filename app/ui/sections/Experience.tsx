@@ -80,7 +80,7 @@ export default function Experience({}: Props) {
     },
     {
       period: "Mar 2018 - May 2020",
-      company: "ICEO - Venture Builder • Frontend Department",
+      company: "devsolutions.io",
       jobTitle: "Frontend Developer",
       projects: [
         {
