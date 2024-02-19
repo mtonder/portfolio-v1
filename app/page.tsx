@@ -5,6 +5,11 @@ import Hero from "./ui/sections/Hero";
 import Education from "./ui/sections/Education";
 import Skills from "./ui/sections/Skills";
 import Contact from "./ui/sections/Contact";
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+};
 
 export default function Home() {
   return (
