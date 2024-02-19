@@ -7,26 +7,26 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Marek Tonder - Portfolio",
     start_url: "/",
     display: "standalone",
-    background_color: "#0f172a",
-    theme_color: "#0f172a",
+    background_color: "#041828",
+    theme_color: "#041828",
     icons: [
       {
-        src: "/apple-touch-icon.png",
+        src: "favicons/apple-touch-icon.png",
         sizes: "180x180",
         type: "image/x-icon",
       },
       {
-        src: "/android-chrome-192x192.png",
+        src: "favicons/android-chrome-192x192.png",
         sizes: "192x192",
         type: "image/x-icon",
       },
       {
-        src: "/android-chrome-512x512.png",
+        src: "favicons/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/x-icon",
       },
       {
-        src: "/favicon.ico",
+        src: "favicons/favicon.ico",
         sizes: "any",
         type: "image/x-icon",
       },

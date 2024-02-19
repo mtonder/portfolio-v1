@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import BackgroundCircles from "../components/BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,14 +12,12 @@ function Hero({}: Props) {
     words: ["Hi, I'm Marek Tonder"],
     loop: 1,
     delaySpeed: 2000,
-    onLoopDone: () => console.log(`loop completed after 3 runs.`),
   });
 
   return (
-    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden text-center md:h-screen">
-      <BackgroundCircles />
+    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden  bg-[url('/layered-waves.svg')] bg-cover pb-[76px] text-center md:h-screen md:pb-0">
       <Image
-        className="relative mx-auto h-48 w-48 rounded-full border border-[#324DD2]/50 object-cover"
+        className="relative mx-auto h-48 w-48 rounded-full border border-[#000]/0 object-cover shadow-lg"
         src="/photo.jpg"
         width={256}
         height={256}
