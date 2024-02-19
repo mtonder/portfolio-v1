@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Marek Tonder - Portfolio",
     start_url: "/",
     display: "standalone",
-    background_color: "#0f172a",
-    theme_color: "#0f172a",
+    background_color: "#041828",
+    theme_color: "#041828",
     icons: [
       {
         src: "favicons/apple-touch-icon.png",

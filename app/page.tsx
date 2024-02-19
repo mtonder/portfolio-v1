@@ -8,13 +8,15 @@ import Contact from "./ui/sections/Contact";
 import type { Viewport } from "next";
 
 export const viewport: Viewport = {
-  themeColor: "#0f172a",
+  themeColor: "#041828",
 };
 
 export default function Home() {
   return (
-    <main className="z-0 h-screen overflow-x-hidden overflow-y-scroll  bg-[#0f172a] text-[#dcdbd1] scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80 md:snap-y md:snap-mandatory">
-      <Header />
+    <main className="z-0 h-screen overflow-x-hidden overflow-y-scroll  bg-[#041828] text-[#dcdbd1] scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#324DD2]/80 md:snap-y md:snap-mandatory">
+      <div className="sticky top-0 z-30 bg-[#041828]">
+        <Header />
+      </div>
       <section id="hero" className="md:snap-start">
         <Hero />
       </section>

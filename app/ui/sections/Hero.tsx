@@ -13,12 +13,10 @@ function Hero({}: Props) {
     words: ["Hi, I'm Marek Tonder"],
     loop: 1,
     delaySpeed: 2000,
-    onLoopDone: () => console.log(`loop completed after 3 runs.`),
   });
 
   return (
-    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden bg-gradient-radial from-[#151d3a] to-[#111729] pb-[76px] text-center md:h-screen md:pb-0">
-      <BackgroundCircles />
+    <div className="flex h-[calc(100vh-76px)] flex-col items-center justify-center space-y-8 overflow-hidden  bg-[url('/layered-waves.svg')] bg-cover pb-[76px] text-center md:h-screen md:pb-0">
       <Image
         className="relative mx-auto h-48 w-48 rounded-full border border-[#000]/0 object-cover shadow-lg"
         src="/photo.jpg"
